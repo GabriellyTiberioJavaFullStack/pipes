@@ -1,0 +1,19 @@
+<!--
+  Pipes são estruturas do Angular que te permitem formatar dados
+  para que apareçam para o usuário de uma forma visualmente melhor
+
+  Utilizados APENAS nos arquivos HTML dos seus componentes
+ -->
+
+<p>{{ dataDeHoje | date:'HH-mm-ss' }}</p>
+<p>{{ 56 | currency:'BRL' }}</p>
+<p>{{ 'eu amo os pipes' | uppercase }}</p>
+<p>{{ 'OS PIPES SÃO BACANAS' | lowercase }}</p>
+<p>{{ [6, 5, 10, 40, 60, 321] | comprimento }}</p>
+<h1>{{ '45612367856' | cpf }}</h1>
+
+<!--
+  Crie um Pipe que servirá para formatar string em um CPF.
+
+  Ex: 45612367856 | cpf -> 456.123.678-56
+ -->
